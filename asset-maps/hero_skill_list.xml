@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<skills>
+    <!--new classes-->
+    <skill><id>0</id><classe>warrior</classe><name>Warrior</name><text>skill_warrior</text><image>skill_warrior</image><cost>0</cost><level>1</level><tags /></skill>
+    <skill><id>1</id><classe>assassin</classe><name>Assassin</name><text>skill_assassin</text><image>skill_assassin</image><cost>0</cost><level>1</level><tags /></skill>
+    <skill><id>2</id><classe>paladin</classe><name>Paladin</name><text>skill_paladin</text><image>skill_paladin</image><cost>0</cost><level>1</level><tags /></skill>
+    <skill><id>3</id><classe>wizard</classe><name>Wizard</name><text>skill_wizard</text><image>skill_wizard</image><cost>0</cost><level>1</level><tags /></skill>
+    <skill><id>4</id><classe>necromancer</classe><name>Necromancer</name><text>skill_necromancer</text><image>skill_necromancer</image><cost>0</cost><level>1</level><tags /></skill>
+    <skill><id>5</id><classe>shaman</classe><name>Shaman</name><text>skill_shaman</text><image>skill_shaman</image><cost>0</cost><level>1</level><tags /></skill>
+    <skill><id>6</id><classe>ranger</classe><name>Ranger</name><text>skill_ranger</text><image>skill_ranger</image><cost>0</cost><level>1</level><tags /></skill>
+    <skill><id>7</id><classe>druid</classe><name>Druid</name><text>skill_druid</text><image>skill_druid</image><cost>0</cost><level>1</level><tags /></skill>
+    <skill><id>8</id><classe>engineer</classe><name>Engineer</name><text>skill_engineer</text><image>skill_engineer</image><cost>0</cost><level>1</level><tags /></skill>
+
+    <skill><id>9</id><classe>neutral</classe><name>Diamond Shield</name><text>skill_1</text><image>skill_1</image><cost>5</cost><level>1</level><tags>Shield/Armored|Coins/Gems</tags></skill>
+    <skill><id>10</id><classe>multiple</classe><name>Knowledge of Strength</name><text>skill_2</text><image>skill_2</image><cost>8</cost><level>1</level><tags>Strength</tags></skill>
+    <skill><id>11</id><classe>multiple</classe><name>Knowledge of Resistance</name><text>skill_3</text><image>skill_3</image><cost>8</cost><level>1</level><tags>Resistance</tags></skill>
+    <skill><id>12</id><classe>neutral</classe><name>Luxury Gift</name><text>skill_4</text><image>skill_4</image><cost>5</cost><level>1</level><tags>Coins/Gems</tags></skill>
+    <skill><id>13</id><classe>neutral</classe><name>Toxic Wall</name><text>skill_5</text><image>skill_5</image><cost>8</cost><level>1</level><tags>Poison</tags></skill>
+    <skill><id>14</id><classe>neutral</classe><name>Burning Wall</name><text>skill_6</text><image>skill_6</image><cost>7</cost><level>1</level><tags>Burn</tags></skill>
+    <skill><id>15</id><classe>neutral</classe><name>Frost Nova</name><text>skill_7</text><image>skill_7</image><cost>9</cost><level>1</level><tags>Daze/Taunt</tags></skill>
+    <skill><id>16</id><classe>neutral</classe><name>Chain Lightning</name><text>skill_8</text><image>skill_8</image><cost>8</cost><level>1</level><tags>Electrify</tags></skill>
+    <skill><id>17</id><classe>neutral</classe><name>Bones Armor</name><text>skill_9</text><image>skill_9</image><cost>7</cost><level>1</level><tags>Shield/Armored</tags></skill>
+    <skill><id>18</id><classe>neutral</classe><name>Bounty Hunter</name><text>skill_10</text><image>skill_10</image><cost>7</cost><level>1</level><tags>Coins/Gems</tags></skill>
+    <skill><id>19</id><classe>neutral</classe><name>Soul Drain</name><text>skill_11</text><image>skill_11</image><cost>6</cost><level>5</level><tags>Heal|Strength</tags></skill>
+    <skill><id>20</id><classe>neutral</classe><name>Explosive Enemies</name><text>skill_12</text><image>skill_12</image><cost>7</cost><level>5</level><tags>Damage</tags></skill>
+    <skill><id>21</id><classe>neutral</classe><name>Toxic Strike</name><text>skill_13</text><image>skill_13</image><cost>9</cost><level>17</level><tags>Poison</tags></skill>
+    <skill><id>22</id><classe>neutral</classe><name>Burning Strike</name><text>skill_14</text><image>skill_14</image><cost>8</cost><level>17</level><tags>Burn</tags></skill>
+    <skill><id>23</id><classe>neutral</classe><name>Shuriken Attack</name><text>skill_15</text><image>skill_15</image><cost>8</cost><level>1</level><tags>Strength</tags></skill>
+    <skill><id>24</id><classe>neutral</classe><name>Kunai Attack</name><text>skill_16</text><image>skill_16</image><cost>8</cost><level>1</level><tags>Resistance</tags></skill>
+    <skill><id>25</id><classe>neutral</classe><name>Gold Ingot</name><text>skill_17</text><image>skill_17</image><cost>7</cost><level>1</level><tags>Coins/Gems</tags></skill>
+    <skill><id>26</id><classe>neutral</classe><name>Treasure Map</name><text>skill_18</text><image>skill_18</image><cost>8</cost><level>4</level><tags>Utility</tags></skill>
+    <skill><id>27</id><classe>neutral</classe><name>Anti-monster Mine</name><text>skill_19</text><image>skill_19</image><cost>5</cost><level>1</level><tags>Weak|Damage</tags></skill>
+    <skill><id>28</id><classe>neutral</classe><name>Telescope</name><text>skill_20</text><image>skill_20</image><cost>5</cost><level>1</level><tags>Mana</tags></skill>
+    <skill><id>29</id><classe>neutral</classe><name>Apple Pie</name><text>skill_21</text><image>skill_21</image><cost>5</cost><level>1</level><tags>Heal</tags></skill>
+    <skill><id>30</id><classe>neutral</classe><name>Torch</name><text>skill_22</text><image>skill_22</image><cost>5</cost><level>1</level><tags>Utility</tags></skill>
+    <skill><id>31</id><classe>neutral</classe><name>Growth Blessing</name><text>skill_23</text><image>skill_23</image><cost>9</cost><level>7</level><tags>Life</tags></skill>
+    <skill><id>32</id><classe>neutral</classe><name>Potion Maker</name><text>skill_24</text><image>skill_24</image><cost>6</cost><level>1</level><tags>Heal</tags></skill>
+    <skill><id>33</id><classe>neutral</classe><name>Kraken Tentacle</name><text>skill_25</text><image>skill_25</image><cost>6</cost><level>1</level><tags>Heal</tags></skill>
+    <skill><id>34</id><classe>neutral</classe><name>Meteor Storm</name><text>skill_26</text><image>skill_26</image><cost>8</cost><level>16</level><tags>Damage</tags></skill>
+    <skill><id>35</id><classe>neutral</classe><name>Mana Battery</name><text>skill_27</text><image>skill_27</image><cost>12</cost><level>19</level><tags>Mana</tags></skill>
+    <skill><id>36</id><classe>neutral</classe><name>Ice Block</name><text>skill_28</text><image>skill_28</image><cost>7</cost><level>14</level><tags>Utility|Life</tags></skill>
+    <skill><id>37</id><classe>neutral</classe><name>Flame Aura</name><text>skill_29</text><image>skill_29</image><cost>11</cost><level>12</level><tags>Burn</tags></skill>
+    <skill><id>38</id><classe>neutral</classe><name>Life Sword</name><text>skill_30</text><image>skill_30</image><cost>8</cost><level>6</level><tags>Strength|Life</tags></skill>
+    <skill><id>39</id><classe>neutral</classe><name>Necklace of Life</name><text>skill_31</text><image>skill_31</image><cost>7</cost><level>4</level><tags>Heal|Life</tags></skill>
+    <skill><id>40</id><classe>neutral</classe><name>Stone Skin</name><text>skill_32</text><image>skill_32</image><cost>8</cost><level>6</level><tags>Resistance|Life</tags></skill>
+    <skill><id>41</id><classe>neutral</classe><name>Devil's Deal</name><text>skill_33</text><image>skill_33</image><cost>11</cost><level>6</level><tags>Strength|Life</tags></skill>
+    <skill><id>42</id><classe>neutral</classe><name>Wand of Combat</name><text>skill_34</text><image>skill_34</image><cost>6</cost><level>3</level><tags>Damage|Overcharged</tags></skill>
+    <skill><id>43</id><classe>neutral</classe><name>Wand of Magic</name><text>skill_35</text><image>skill_35</image><cost>6</cost><level>3</level><tags>Damage|Overcharged</tags></skill>
+    <skill><id>44</id><classe>neutral</classe><name>Mana Sword</name><text>skill_36</text><image>skill_36</image><cost>6</cost><level>5</level><tags>Mana</tags></skill>
+    <skill><id>45</id><classe>neutral</classe><name>Shield of Shadows</name><text>skill_37</text><image>skill_37</image><cost>6</cost><level>11</level><tags>Shield/Armored|Exile/Remove</tags></skill>
+    <skill><id>46</id><classe>neutral</classe><name>Fire Punch</name><text>skill_38</text><image>skill_38</image><cost>8</cost><level>16</level><tags>Burn|Damage</tags></skill>
+    <skill><id>47</id><classe>neutral</classe><name>Thunder Blast</name><text>skill_39</text><image>skill_39</image><cost>6</cost><level>1</level><tags>Electrify|Damage</tags></skill>
+    <skill><id>48</id><classe>neutral</classe><name>Dark Sigil</name><text>skill_40</text><image>skill_40</image><cost>10</cost><level>11</level><tags>Utility|Life</tags></skill>
+    <skill><id>49</id><classe>neutral</classe><name>Tower Shield</name><text>skill_41</text><image>skill_41</image><cost>18</cost><level>25</level><tags>Daze/Taunt|Shield/Armored</tags></skill>
+    <skill><id>50</id><classe>neutral</classe><name>Blessing of Sanctuary</name><text>skill_42</text><image>skill_42</image><cost>10</cost><level>20</level><tags>Immune|Resistance|Strength|Life</tags></skill>
+    <skill><id>51</id><classe>neutral</classe><name>Phoenix Feather</name><text>skill_43</text><image>skill_43</image><cost>10</cost><level>1</level><tags>Heal|Life</tags></skill>
+    <skill><id>52</id><classe>neutral</classe><name>Shadow Wall</name><text>skill_44</text><image>skill_44</image><cost>8</cost><level>1</level><tags>Weak</tags></skill>
+    <skill><id>53</id><classe>neutral</classe><name>Dark Matter</name><text>skill_45</text><image>skill_45</image><cost>8</cost><level>11</level><tags>Exile/Remove|Damage</tags></skill>
+    <skill><id>54</id><classe>neutral</classe><name>Demon Eye</name><text>skill_46</text><image>skill_46</image><cost>7</cost><level>1</level><tags>Mana|Debuff</tags></skill>
+    <skill><id>55</id><classe>neutral</classe><name>Living Mana</name><text>skill_47</text><image>skill_47</image><cost>6</cost><level>2</level><tags>Mana|Damage</tags></skill>
+    <skill><id>56</id><classe>neutral</classe><name>Book of Magic</name><text>skill_48</text><image>skill_48</image><cost>8</cost><level>2</level><tags>Heal</tags></skill>
+    <skill><id>57</id><classe>neutral</classe><name>Toxic Explosion</name><text>skill_49</text><image>skill_49</image><cost>11</cost><level>5</level><tags>Poison</tags></skill>
+    <skill><id>58</id><classe>neutral</classe><name>Burning Armor</name><text>skill_50</text><image>skill_50</image><cost>7</cost><level>13</level><tags>Burn</tags></skill>
+    <skill><id>59</id><classe>neutral</classe><name>Master of Toxins</name><text>skill_51</text><image>skill_51</image><cost>11</cost><level>15</level><tags>Weak|Poison|Resistance|Strength</tags></skill>
+    <skill><id>60</id><classe>neutral</classe><name>Frog Leg</name><text>skill_52</text><image>skill_52</image><cost>8</cost><level>1</level><tags>Debuff</tags></skill>
+    <skill><id>61</id><classe>neutral</classe><name>Fox Tail</name><text>skill_53</text><image>skill_53</image><cost>9</cost><level>1</level><tags>Debuff</tags></skill>
+    <skill><id>62</id><classe>neutral</classe><name>Rabbit Paw</name><text>skill_54</text><image>skill_54</image><cost>11</cost><level>1</level><tags>Debuff</tags></skill>
+    <skill><id>63</id><classe>neutral</classe><name>Phantom Boots</name><text>skill_55</text><image>skill_55</image><cost>13</cost><level>19</level><tags>Utility</tags></skill>
+    <skill><id>64</id><classe>neutral</classe><name>Pink Magic</name><text>skill_56</text><image>skill_56</image><cost>8</cost><level>10</level><tags>Party/Evoke</tags></skill>
+    <skill><id>65</id><classe>neutral</classe><name>Shadow Cage</name><text>skill_57</text><image>skill_57</image><cost>11</cost><level>8</level><tags>Weak</tags></skill>
+    <skill><id>66</id><classe>neutral</classe><name>Solid Shell</name><text>skill_58</text><image>skill_58</image><cost>7</cost><level>1</level><tags>Shield/Armored</tags></skill>
+    <skill><id>67</id><classe>neutral</classe><name>Multishot</name><text>skill_59</text><image>skill_59</image><cost>8</cost><level>1</level><tags>Damage</tags></skill>
+    <skill><id>68</id><classe>neutral</classe><name>Priest Staff</name><text>skill_60</text><image>skill_60</image><cost>11</cost><level>5</level><tags>Heal</tags></skill>
+    <skill><id>69</id><classe>neutral</classe><name>Ice King Sword</name><text>skill_61</text><image>skill_61</image><cost>10</cost><level>10</level><tags>Party/Evoke</tags></skill>
+    <skill><id>70</id><classe>neutral</classe><name>Earth Punch</name><text>skill_62</text><image>skill_62</image><cost>6</cost><level>1</level><tags>Damage|Shield/Armored</tags></skill>
+    <skill><id>71</id><classe>neutral</classe><name>Dark Grasp</name><text>skill_63</text><image>skill_63</image><cost>11</cost><level>8</level><tags>Weak|Damage</tags></skill>
+    <skill><id>72</id><classe>neutral</classe><name>Golden Potion</name><text>skill_64</text><image>skill_64</image><cost>10</cost><level>7</level><tags>Life</tags></skill>
+    <skill><id>73</id><classe>neutral</classe><name>Staff of Bones</name><text>skill_65</text><image>skill_65</image><cost>9</cost><level>18</level><tags>Utility</tags></skill>
+    <skill><id>74</id><classe>neutral</classe><name>Amulet of Healing</name><text>skill_66</text><image>skill_66</image><cost>12</cost><level>12</level><tags>Heal</tags></skill>
+    <skill><id>75</id><classe>neutral</classe><name>Circular Shield</name><text>skill_67</text><image>skill_67</image><cost>8</cost><level>13</level><tags>Shield/Armored</tags></skill>
+    <skill><id>76</id><classe>neutral</classe><name>Key of the Portal</name><text>skill_68</text><image>skill_68</image><cost>9</cost><level>18</level><tags>Party/Evoke</tags></skill>
+    <skill><id>77</id><classe>neutral</classe><name>Staff of Curses</name><text>skill_69</text><image>skill_69</image><cost>9</cost><level>18</level><tags>Utility</tags></skill>
+    <skill><id>78</id><classe>neutral</classe><name>Tear of Goddess</name><text>skill_70</text><image>skill_70</image><cost>5</cost><level>5</level><tags>Mana|Debuff</tags></skill>
+    <skill><id>79</id><classe>neutral</classe><name>Opal Stone</name><text>skill_71</text><image>skill_71</image><cost>20</cost><level>20</level><tags>Party/Evoke</tags></skill>
+    <skill><id>80</id><classe>neutral</classe><name>Pickpocket</name><text>skill_72</text><image>skill_72</image><cost>10</cost><level>16</level><tags>Coins/Gems</tags></skill>
+    <skill><id>81</id><classe>neutral</classe><name>Purple Magic</name><text>skill_73</text><image>skill_73</image><cost>8</cost><level>10</level><tags>Party/Evoke</tags></skill>
+    <skill><id>82</id><classe>neutral</classe><name>Crystal Sphere</name><text>skill_74</text><image>skill_74</image><cost>5</cost><level>13</level><tags>Utility</tags></skill>
+
+    <!--new classes-->
+    <skill><id>83</id><classe>barbarian</classe><name>Barbarian</name><text>skill_barbarian</text><image>skill_barbarian</image><cost>0</cost><level>1</level><tags /></skill>
+    <skill><id>84</id><classe>pirate</classe><name>Pirate</name><text>skill_pirate</text><image>skill_pirate</image><cost>0</cost><level>1</level><tags /></skill>
+    <skill><id>85</id><classe>runemaster</classe><name>Runemaster</name><text>skill_runemaster</text><image>skill_runemaster</image><cost>0</cost><level>1</level><tags /></skill>
+
+    <skill><id>86</id><classe>neutral</classe><name>Invisibility Potion</name><text>skill_75</text><image>skill_75</image><cost>5</cost><level>4</level><tags>Utility</tags></skill>
+    <skill><id>87</id><classe>neutral</classe><name>Snail Shell</name><text>skill_76</text><image>skill_76</image><cost>9</cost><level>1</level><tags>Shield/Armored</tags></skill>
+    <skill><id>88</id><classe>neutral</classe><name>Acid Arrow</name><text>skill_77</text><image>skill_77</image><cost>6</cost><level>12</level><tags>Poison|Debuff</tags></skill>
+    <skill><id>89</id><classe>neutral</classe><name>Toxic Aura</name><text>skill_78</text><image>skill_78</image><cost>11</cost><level>12</level><tags>Poison</tags></skill>
+    <skill><id>90</id><classe>neutral</classe><name>Perfect Crystal</name><text>skill_79</text><image>skill_79</image><cost>11</cost><level>1</level><tags>Immune</tags></skill>
+    <skill><id>91</id><classe>neutral</classe><name>Necronomicon</name><text>skill_80</text><image>skill_80</image><cost>10</cost><level>2</level><tags>Mana|Life</tags></skill>
+    <skill><id>92</id><classe>neutral</classe><name>Weakening Aura</name><text>skill_81</text><image>skill_81</image><cost>11</cost><level>12</level><tags>Weak</tags></skill>
+    <skill><id>93</id><classe>neutral</classe><name>Finisher</name><text>skill_82</text><image>skill_82</image><cost>10</cost><level>26</level><tags>Damage</tags></skill>
+    <skill><id>94</id><classe>neutral</classe><name>Purple Potion</name><text>skill_83</text><image>skill_83</image><cost>7</cost><level>8</level><tags>Resistance|Strength|Debuff</tags></skill>
+    <skill><id>95</id><classe>neutral</classe><name>Electrostatic Field</name><text>skill_84</text><image>skill_84</image><cost>13</cost><level>2</level><tags>Electrify|Overcharged</tags></skill>
+    <skill><id>96</id><classe>neutral</classe><name>Explosive Shot</name><text>skill_85</text><image>skill_85</image><cost>9</cost><level>12</level><tags>Damage</tags></skill>
+    <skill><id>97</id><classe>neutral</classe><name>Freezing Shot</name><text>skill_86</text><image>skill_86</image><cost>9</cost><level>12</level><tags>Daze/Taunt</tags></skill>
+    <skill><id>98</id><classe>neutral</classe><name>Spear of Ghosts</name><text>skill_87</text><image>skill_87</image><cost>6</cost><level>2</level><tags>Debuff|Damage</tags></skill>
+    <skill><id>99</id><classe>neutral</classe><name>Weak Vortex</name><text>skill_88</text><image>skill_88</image><cost>10</cost><level>11</level><tags>Weak|Damage</tags></skill>
+    <skill><id>100</id><classe>neutral</classe><name>Golden Shield</name><text>skill_89</text><image>skill_89</image><cost>15</cost><level>15</level><tags>Damage</tags></skill>
+    <skill><id>101</id><classe>neutral</classe><name>Toxic Globe</name><text>skill_90</text><image>skill_90</image><cost>7</cost><level>7</level><tags>Poison</tags></skill>
+    <skill><id>102</id><classe>neutral</classe><name>Piece of Coal</name><text>skill_91</text><image>skill_91</image><cost>6</cost><level>8</level><tags>Resistance|Debuff</tags></skill>
+    <skill><id>103</id><classe>neutral</classe><name>Cursed Arrow</name><text>skill_92</text><image>skill_92</image><cost>6</cost><level>12</level><tags>Debuff|Damage</tags></skill>
+    <skill><id>104</id><classe>neutral</classe><name>Bat Wing</name><text>skill_93</text><image>skill_93</image><cost>6</cost><level>8</level><tags>Debuff|Damage</tags></skill>
+    <skill><id>105</id><classe>neutral</classe><name>Bird Beak</name><text>skill_94</text><image>skill_94</image><cost>6</cost><level>8</level><tags>Shield/Armored|Debuff</tags></skill>
+    <skill><id>106</id><classe>neutral</classe><name>Weak Dagger</name><text>skill_95</text><image>skill_95</image><cost>9</cost><level>4</level><tags>Weak</tags></skill>
+    <skill><id>107</id><classe>neutral</classe><name>Burn Dagger</name><text>skill_96</text><image>skill_96</image><cost>9</cost><level>4</level><tags>Burn</tags></skill>
+    <skill><id>108</id><classe>neutral</classe><name>Thunder Dagger</name><text>skill_97</text><image>skill_97</image><cost>9</cost><level>4</level><tags>Electrify|Overcharged</tags></skill>
+    <skill><id>109</id><classe>neutral</classe><name>Rock Dagger</name><text>skill_98</text><image>skill_98</image><cost>9</cost><level>4</level><tags>Shield/Armored|Thorns</tags></skill>
+    <skill><id>110</id><classe>neutral</classe><name>Mana Dagger</name><text>skill_99</text><image>skill_99</image><cost>9</cost><level>4</level><tags>Debuff|Mana</tags></skill>
+    <skill><id>111</id><classe>neutral</classe><name>Sapphire Medallion</name><text>skill_100</text><image>skill_100</image><cost>9</cost><level>9</level><tags>Debuff|Party/Evoke</tags></skill>
+    <skill><id>112</id><classe>neutral</classe><name>Scorpion Claw</name><text>skill_101</text><image>skill_101</image><cost>9</cost><level>1</level><tags>Debuff</tags></skill>
+    <skill><id>113</id><classe>neutral</classe><name>Roc's Feather</name><text>skill_102</text><image>skill_102</image><cost>10</cost><level>1</level><tags>Shield/Armored|Life</tags></skill>
+
+    <!--hidden skills-->
+    <skill><id>114</id><classe>hidden</classe><name>Forest Sigil</name><text>skill_secret_sigil</text><image>skill_forest</image><cost>0</cost><level>1</level><tags>Mana</tags></skill>
+    <skill><id>115</id><classe>hidden</classe><name>Swamp Sigil</name><text>skill_secret_sigil</text><image>skill_swamp</image><cost>0</cost><level>1</level><tags>Mana</tags></skill>
+    <skill><id>116</id><classe>hidden</classe><name>Desert Sigil</name><text>skill_secret_sigil</text><image>skill_desert</image><cost>0</cost><level>1</level><tags>Mana</tags></skill>
+    <skill><id>117</id><classe>hidden</classe><name>Deep Water Sigil</name><text>skill_secret_sigil</text><image>skill_water</image><cost>0</cost><level>1</level><tags>Mana</tags></skill>
+    <skill><id>118</id><classe>hidden</classe><name>Volcano Sigil</name><text>skill_secret_sigil</text><image>skill_volcano</image><cost>0</cost><level>1</level><tags>Mana</tags></skill>
+    <skill><id>119</id><classe>hidden</classe><name>Lost World Sigil</name><text>skill_secret_sigil</text><image>skill_lostworld</image><cost>0</cost><level>1</level><tags>Mana</tags></skill>
+    <skill><id>120</id><classe>hidden</classe><name>Land of Dragons Sigil</name><text>skill_secret_sigil</text><image>skill_dragon</image><cost>0</cost><level>1</level><tags>Mana</tags></skill>
+    <skill><id>121</id><classe>hidden</classe><name>Reign of the Dead Sigil</name><text>skill_secret_sigil</text><image>skill_undead</image><cost>0</cost><level>1</level><tags>Mana</tags></skill>
+    <skill><id>122</id><classe>hidden</classe><name>The Void Sigil</name><text>skill_secret_sigil</text><image>skill_void</image><cost>0</cost><level>1</level><tags>Mana</tags></skill>
+
+    <!--new classes-->
+    <skill><id>123</id><classe>warden</classe><name>Warden</name><text>skill_warden</text><image>skill_warden</image><cost>0</cost><level>1</level></skill>
+    <skill><id>124</id><classe>cultist</classe><name>Cultist</name><text>skill_cultist</text><image>skill_cultist</image><cost>0</cost><level>1</level></skill>
+    <skill><id>125</id><classe>gladiator</classe><name>Gladiator</name><text>skill_gladiator</text><image>skill_gladiator</image><cost>0</cost><level>1</level></skill>
+
+    <skill><id>126</id><classe>neutral</classe><name>Vial of Life</name><text>skill_103</text><image>skill_103</image><cost>5</cost><level>3</level><tags>Life|Debuff</tags></skill>
+    <skill><id>127</id><classe>neutral</classe><name>Lure</name><text>skill_104</text><image>skill_104</image><cost>6</cost><level>1</level><tags>Shield/Armored|Daze/Taunt</tags></skill>
+    <skill><id>128</id><classe>neutral</classe><name>Destroyed Shield</name><text>skill_105</text><image>skill_105</image><cost>6</cost><level>6</level><tags>Immune|Debuff</tags></skill>
+    <skill><id>129</id><classe>neutral</classe><name>Services Voucher</name><text>skill_106</text><image>skill_106</image><cost>8</cost><level>7</level><tags>Utility</tags></skill>
+    <skill><id>130</id><classe>neutral</classe><name>Power Battery</name><text>skill_107</text><image>skill_107</image><cost>10</cost><level>19</level><tags>Overcharged|Strength|Mana</tags></skill>
+    <skill><id>131</id><classe>neutral</classe><name>Magician Hat</name><text>skill_108</text><image>skill_108</image><cost>9</cost><level>9</level><tags>Poison|Burn</tags></skill>
+    <skill><id>132</id><classe>neutral</classe><name>War Hatchet</name><text>skill_109</text><image>skill_109</image><cost>12</cost><level>12</level><tags>Overcharged|Damage</tags></skill>
+    <skill><id>133</id><classe>neutral</classe><name>Strange Potion</name><text>skill_110</text><image>skill_110</image><cost>5</cost><level>22</level><tags>Thorns|Resistance|Strength|Debuff</tags></skill>
+    <skill><id>134</id><classe>neutral</classe><name>Block of Gems</name><text>skill_111</text><image>skill_111</image><cost>10</cost><level>14</level><tags>Coins/Gems</tags></skill>
+    <skill><id>135</id><classe>neutral</classe><name>Fully Charged</name><text>skill_112</text><image>skill_112</image><cost>6</cost><level>4</level><tags>Overcharged|Mana|Resistance|Strength</tags></skill>
+    <skill><id>136</id><classe>neutral</classe><name>Earth Trap</name><text>skill_113</text><image>skill_113</image><cost>6</cost><level>1</level><tags>Daze/Taunt|Thorns</tags></skill>
+    <skill><id>137</id><classe>neutral</classe><name>Wild Strawberries</name><text>skill_114</text><image>skill_114</image><cost>6</cost><level>5</level><tags>Utility</tags></skill>
+    <skill><id>138</id><classe>neutral</classe><name>Demon Blood</name><text>skill_115</text><image>skill_115</image><cost>10</cost><level>18</level><tags>Shield/Armored|Resistance|Heal|Debuff</tags></skill>
+    <skill><id>139</id><classe>neutral</classe><name>Sacred Tunic</name><text>skill_116</text><image>skill_116</image><cost>17</cost><level>25</level><tags>Shield/Armored|Life</tags></skill>
+    <skill><id>140</id><classe>neutral</classe><name>Double Edged Blade</name><text>skill_117</text><image>skill_117</image><cost>6</cost><level>2</level><tags>Strength|Debuff</tags></skill>
+    <skill><id>141</id><classe>neutral</classe><name>Cardpedia</name><text>skill_118</text><image>skill_118</image><cost>8</cost><level>8</level><tags>Shield/Armored|Party/Evoke</tags></skill>
+
+    <skill><id>142</id><classe>neutral</classe><name>Spiked Armor</name><text>skill_119</text><image>skill_119</image><cost>8</cost><level>3</level><tags>Thorns</tags></skill>
+    <skill><id>143</id><classe>neutral</classe><name>Spiked Shield</name><text>skill_120</text><image>skill_120</image><cost>7</cost><level>3</level><tags>Thorns</tags></skill>
+    <skill><id>144</id><classe>neutral</classe><name>Spiked Gloves</name><text>skill_121</text><image>skill_121</image><cost>6</cost><level>3</level><tags>Thorns</tags></skill>
+
+    <skill><id>145</id><classe>neutral</classe><name>Weakening Strike</name><text>skill_122</text><image>skill_122</image><cost>8</cost><level>17</level><tags>Weak</tags></skill>
+    <skill><id>146</id><classe>neutral</classe><name>Thunder Strike</name><text>skill_123</text><image>skill_123</image><cost>8</cost><level>17</level><tags>Electrify</tags></skill>
+    <skill><id>147</id><classe>neutral</classe><name>Electrified Arrow</name><text>skill_124</text><image>skill_124</image><cost>6</cost><level>12</level><tags>Electrify|Debuff</tags></skill>
+
+    <skill><id>148</id><classe>neutral</classe><name>Circular Strike</name><text>skill_125</text><image>skill_125</image><cost>8</cost><level>13</level><tags>Damage</tags></skill>
+    <skill><id>149</id><classe>neutral</classe><name>Acid Spear</name><text>skill_126</text><image>skill_126</image><cost>6</cost><level>6</level><tags>Poison</tags></skill>
+    <skill><id>150</id><classe>neutral</classe><name>Death Diary</name><text>skill_127</text><image>skill_127</image><cost>13</cost><level>24</level><tags>Damage</tags></skill>
+    <skill><id>151</id><classe>neutral</classe><name>Stone Block</name><text>skill_128</text><image>skill_128</image><cost>7</cost><level>14</level><tags>Debuff</tags></skill>
+
+    <skill><id>152</id><classe>neutral</classe><name>Sun Blessed Mace</name><text>skill_129</text><image>skill_129</image><cost>12</cost><level>12</level><tags>Damage|Heal|Life</tags></skill>
+    <skill><id>153</id><classe>neutral</classe><name>Sun Blessed Bow</name><text>skill_130</text><image>skill_130</image><cost>12</cost><level>12</level><tags>Damage|Heal|Life</tags></skill>
+    <skill><id>154</id><classe>evoked</classe><name>Brightest Star</name><text>skill_131</text><image>skill_131</image><cost>0</cost><level>12</level><tags>Heal|Life</tags></skill>
+
+    <skill><id>155</id><classe>neutral</classe><name>Piercing Flames</name><text>skill_132</text><image>skill_132</image><cost>8</cost><level>28</level><tags>Burn</tags></skill>
+    <skill><id>156</id><classe>neutral</classe><name>Infernal Skull</name><text>skill_133</text><image>skill_133</image><cost>17</cost><level>29</level><tags>Burn|Life</tags></skill>
+
+    <skill><id>157</id><classe>neutral</classe><name>Leather Helmet</name><text>skill_134</text><image>skill_134</image><cost>7</cost><level>2</level><tags>Strength|Debuff|Mana</tags></skill>
+    <skill><id>158</id><classe>neutral</classe><name>Leather Boots</name><text>skill_135</text><image>skill_135</image><cost>7</cost><level>2</level><tags>Strength|Debuff|Mana</tags></skill>
+
+    <skill><id>159</id><classe>neutral</classe><name>Black Shield</name><text>skill_136</text><image>skill_136</image><cost>14</cost><level>20</level><tags>Shield/Armored|Life</tags></skill>
+
+    <skill><id>160</id><classe>neutral</classe><name>Heavy Helmet</name><text>skill_137</text><image>skill_137</image><cost>8</cost><level>15</level><tags>Resistance|Shield/Armored|Debuff</tags></skill>
+    <skill><id>161</id><classe>neutral</classe><name>Heavy Armor</name><text>skill_138</text><image>skill_138</image><cost>9</cost><level>15</level><tags>Resistance|Shield/Armored|Debuff</tags></skill>
+    <skill><id>162</id><classe>neutral</classe><name>Heavy Shield</name><text>skill_139</text><image>skill_139</image><cost>8</cost><level>15</level><tags>Resistance|Shield/Armored|Debuff</tags></skill>
+
+    <skill><id>163</id><classe>neutral</classe><name>Wood Elves Boots</name><text>skill_140</text><image>skill_140</image><cost>9</cost><level>17</level><tags>Shield/Armored|Poison|Party/Evoke</tags></skill>
+    <skill><id>164</id><classe>neutral</classe><name>Dark Elves Boots</name><text>skill_141</text><image>skill_141</image><cost>9</cost><level>17</level><tags>Shield/Armored|Weak|Party/Evoke</tags></skill>
+
+    <skill><id>165</id><classe>neutral</classe><name>Toxic Leaf</name><text>skill_142</text><image>skill_142</image><cost>7</cost><level>7</level><tags>Poison|Weak</tags></skill>
+    <skill><id>166</id><classe>neutral</classe><name>Antidote</name><text>skill_143</text><image>skill_143</image><cost>10</cost><level>9</level><tags>Life|Debuff</tags></skill>
+
+    <skill><id>167</id><classe>neutral</classe><name>Magic Mirror</name><text>skill_144</text><image>skill_144</image><cost>13</cost><level>11</level><tags>Utility</tags></skill>
+    <skill><id>168</id><classe>neutral</classe><name>Evoker Staff</name><text>skill_145</text><image>skill_145</image><cost>17</cost><level>27</level><tags>Party/Evoke</tags></skill>
+
+    <skill><id>169</id><classe>neutral</classe><name>Twin-blade Sword</name><text>skill_146</text><image>skill_146</image><cost>14</cost><level>27</level><tags>Strength|Damage</tags></skill>
+    <skill><id>170</id><classe>neutral</classe><name>Staff of Ghosts</name><text>skill_147</text><image>skill_147</image><cost>6</cost><level>2</level><tags>Debuff|Mana|Damage</tags></skill>
+    <skill><id>171</id><classe>neutral</classe><name>Shooting Target</name><text>skill_148</text><image>skill_148</image><cost>6</cost><level>2</level><tags>Damage|Utility</tags></skill>
+    <skill><id>172</id><classe>neutral</classe><name>Electrostatic Aura</name><text>skill_149</text><image>skill_149</image><cost>11</cost><level>12</level><tags>Electrify</tags></skill>
+    <skill><id>173</id><classe>neutral</classe><name>Water Geyser</name><text>skill_150</text><image>skill_150</image><cost>7</cost><level>2</level><tags>Damage|Heal|Electrify</tags></skill>
+
+    <!--<skill><id>80</id><classe>neutral</classe><name>Christmas Offer</name><text>skill_christamas_offer</text><image>skill_christmas_offer</image><cost>12</cost><level>2</level></skill>-->
+</skills>

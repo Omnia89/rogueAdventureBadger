@@ -33,10 +33,12 @@ func extractCards() {
 
 	// write JS file
 	sb := strings.Builder{}
-	sb.WriteString("export const heroCards = {\n")
+	sb.WriteString("const heroCards = {\n")
 	for _, card := range cardFile.Cards {
 		sb.WriteString("\t")
-		sb.WriteString(fmt.Sprintf("\"%s\": \"%s\",\n", card.Name, card.Image))
+		// replace "*"" with "i"
+		card.Name = strings.ReplaceAll(card.Name, "*", "i")
+		sb.WriteString(fmt.Sprintf("\"%s\": \"%s\",\n", strings.ToLower(card.Name), card.Image))
 	}
 	sb.WriteString("};\n")
 

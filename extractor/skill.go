@@ -33,10 +33,10 @@ func extractSkills() {
 
 	// write JS file
 	sb := strings.Builder{}
-	sb.WriteString("export const heroSkills = {\n")
+	sb.WriteString("const heroSkills = {\n")
 	for _, skill := range skillFile.Skills {
 		sb.WriteString("\t")
-		sb.WriteString(fmt.Sprintf("\"%s\": \"%s\",\n", skill.Name, skill.Image))
+		sb.WriteString(fmt.Sprintf("\"%s\": \"%s\",\n", strings.ToLower(skill.Name), skill.Image))
 	}
 	sb.WriteString("};\n")
 

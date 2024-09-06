@@ -1,0 +1,17 @@
+@font-face {
+    font-family: "RougueFont";
+    src: url("fonts/dpcomic.woff");
+}
+
+#result {
+    font-family: "RougueFont";
+    font-size: 1.5em;
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #f4f4f4;
+}
+  

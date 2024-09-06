@@ -14,4 +14,36 @@
     border-radius: 5px;
     background-color: #f4f4f4;
 }
-  
+
+.badge {
+    display: grid;
+    width: 600px;
+    grid-template-areas: 
+        "shield checks checks"
+        "shield cards  cards"
+        "bonus  cards  cards"
+        "skills cards  cards"
+        "skills cards  cards"
+    ;
+    gap: 5px;
+}
+
+.shield {
+    grid-area: shield;
+}
+
+.bonus {
+    grid-area: bonus;
+}
+
+.checks {
+    grid-area: checks;
+}
+
+.cards {
+    grid-area: cards;
+}
+
+.skills {
+    grid-area: skills;
+}

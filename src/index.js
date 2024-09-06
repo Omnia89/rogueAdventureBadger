@@ -101,34 +101,55 @@ function getImageSrc(element, imgName) {
 }
 
 const formatResult = (result) => {
-    // get class icon
-    const classIcon = heroSkills[result["CLASS"]];
+
+    // get class 
+    const heroClass = result["CLASS"];
+    const heroClassImg = document.createElement('img');
+    getImageSrc(heroClassImg, `choose_${heroClass}`);
+    heroClassImg.classList.add('shield');
+    outputField.insertAdjacentElement('beforeend', heroClassImg);
+
+    // put hr
+    // outputField.insertAdjacentHTML('beforeend', '<hr>');
+
+    // class bonuses container
+    const classBonuses = document.createElement('div');
+    classBonuses.classList.add('bonus');
+
+    // get class base skill
+    const classIcon = heroSkills[heroClass];
     if (classIcon) {
         const classImg = document.createElement('img');
         getImageSrc(classImg, classIcon);
-        outputField.insertAdjacentElement('beforeend', classImg);
+        classBonuses.insertAdjacentElement('beforeend', classImg);
     }
 
-    // get class upgrade icon
+    // get class upgrade skill
     const classUpgrade = result["CLASS UPGRADE"];
     if (classUpgrade == "yes") {
         const classUpgradeImg = document.createElement('img');
-        getImageSrc(classUpgradeImg, `skill_${result["CLASS"]}_upgrade`);
-        outputField.insertAdjacentElement('beforeend', classUpgradeImg);
+        getImageSrc(classUpgradeImg, `skill_${heroClass}_upgrade`);
+        classBonuses.insertAdjacentElement('beforeend', classUpgradeImg);
     }
 
-    // get class bonus
+    // get class bonus skill
     const classBonus = result["CLASS BONUS"];
     if (classBonus) {
         const classBonusImg = document.createElement('img');
-        getImageSrc(classBonusImg, getHeroSubclassImageName(result["CLASS"], classBonus));
+        getImageSrc(classBonusImg, getHeroSubclassImageName(heroClass, classBonus));
         console.info(classBonusImg);
-        outputField.insertAdjacentElement('beforeend', classBonusImg);
+        classBonuses.insertAdjacentElement('beforeend', classBonusImg);
     }
 
+    outputField.insertAdjacentElement('beforeend', classBonuses);
+
     // put hr
-    outputField.insertAdjacentHTML('beforeend', '<hr>');
+    // outputField.insertAdjacentHTML('beforeend', '<hr>');
     
+    // skills container
+    const skillsContainer = document.createElement('div');
+    skillsContainer.classList.add('skills');
+
     // skills
     const skills = result["SKILLS"];
     const skillsArray = skills.split('-').map(skill => skill.trim());
@@ -136,11 +157,16 @@ const formatResult = (result) => {
         const imgName = heroSkills[skill];
         const skillImg = document.createElement('img');
         getImageSrc(skillImg, imgName);
-        outputField.insertAdjacentElement('beforeend', skillImg);
+        skillsContainer.insertAdjacentElement('beforeend', skillImg);
     });
+    outputField.insertAdjacentElement('beforeend', skillsContainer);
 
     // put hr
-    outputField.insertAdjacentHTML('beforeend', '<hr>');
+    // outputField.insertAdjacentHTML('beforeend', '<hr>');
+
+    // cards container
+    const cardsContainer = document.createElement('div');
+    cardsContainer.classList.add('cards');
 
     // deck
     const deck = result["DECK"];
@@ -149,18 +175,33 @@ const formatResult = (result) => {
         const imgName = heroCards[card];
         const cardImg = document.createElement('img');
         getImageSrc(cardImg, imgName);
-        outputField.insertAdjacentElement('beforeend', cardImg);
+        cardsContainer.insertAdjacentElement('beforeend', cardImg);
     });
-
-    // TODO: alcune immagini sono in jpg, dovrei controllare sta cosa https://stackoverflow.com/questions/55880196/is-there-a-way-to-easily-check-if-the-image-url-is-valid-or-not
+    outputField.insertAdjacentElement('beforeend', cardsContainer);
 
     // NTH: recuperare gli sfondi presenti
 
     // TODO: game mode (testo)
     // TODO: difficulty (testo)
     // TODO: score (da scrivere)
-    // TODO: skills, da splittare per `-` e recuperare le immagini
-    // TODO: deck, da splittare per `-` e recuperare le immagini
-    // 
+
+    // Potenziali sfondi
+    // text_desert_background.jpg
+    // text_dragonland_background.jpg
+    // text_forest_background.jpg
+    // text_lostworld_background.jpg
+    // text_mountain_background.jpg
+    // text_reignofdead_background.jpg
+    // text_steam_background.jpg
+    // text_swamp_background.jpg
+    // text_void_background.jpg
+    // text_volcano_background.jpg
+    // text_water2_background.jpg
+    // text_water_background.jpg
+    // tournament_back_off.jpg 
+    // tournament_back_on.jpg 
+    // tournament_close.png 
+    // tournament_image.png 
+    // tournament_open.png
     
 };

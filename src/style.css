@@ -5,7 +5,7 @@
 
 #result {
     font-family: "RougueFont";
-    font-size: 1.5em;
+    font-size: 1.2em;
     color: #333;
     text-align: center;
     margin-top: 20px;
@@ -19,8 +19,8 @@
     display: grid;
     width: 600px;
     grid-template-areas: 
-        "shield checks checks"
-        "shield cards  cards"
+        "shield score  score"
+        "shield score  score"
         "bonus  cards  cards"
         "skills cards  cards"
         "skills cards  cards"
@@ -30,20 +30,80 @@
 
 .shield {
     grid-area: shield;
+    justify-self: center;
 }
 
 .bonus {
     grid-area: bonus;
 }
 
-.checks {
-    grid-area: checks;
+.score {
+    grid-area: score;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    gap: 5px;
+    position: relative;
 }
 
 .cards {
     grid-area: cards;
 }
 
+.card {
+    position: relative; 
+    display: inline-block; 
+    margin: 2px;
+}
+
 .skills {
     grid-area: skills;
+}
+
+.skill {
+    position: relative; 
+    display: inline-block; 
+    margin: 2px;
+}
+
+.counter {
+    color: white; 
+    text-shadow: 2px 2px 3px black;
+    font-size: 0.7em; 
+    position: absolute; 
+    top: 2px; 
+    right: 2px; 
+    z-index:10;
+}
+
+.user {
+    text-decoration: underline;
+    color: forestgreen;
+}
+
+.horizontal-stats {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.single-stat {
+    display: flex;
+    align-items: center;
+}
+
+.single-stat > img {
+    width: 34px;
+    height: 34px;
+    object-fit: contain;
+    margin-right: 4px;
+}
+
+.game-version {
+    font-size: 0.7em;
+    color: #666;
+    position: absolute;
+    top: 0px;
+    right: 0px;
 }

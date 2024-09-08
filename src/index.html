@@ -8,9 +8,54 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <textarea id="score" rows="40" cols="100"></textarea>
-    <button id="parse">Parse</button>
-    <div id="result" class="badge"></div>
+    <div id="container">
+        <h1>Rouge Adventure Badge generator v1.0</h2>
+        <textarea id="score" rows="35" cols="100"></textarea>
+        <fieldset> 
+            <legend>Select the background</legend>
+            <div>
+                <input type="radio" id="background1" name="background" value="outer_container.png" checked />
+                <label for="background1">Simple</label>
+
+                <input type="radio" id="background2" name="background" value="screen_2_background.png" />
+                <label for="background2">Simple 2</label>
+
+                <input type="radio" id="background3" name="background" value="tournament_back_off.jpg" />
+                <label for="background3">Tournament b/w</label>
+
+                <input type="radio" id="background4" name="background" value="tournament_back_on.jpg" />
+                <label for="background4">Tournament</label>
+
+                <input type="radio" id="background5" name="background" value="tournament_open.png" />
+                <label for="background5">Tournament 2</label>
+
+                <input type="radio" id="background6" name="background" value="text_desert_background.jpg" />
+                <label for="background6">Desert</label>
+                
+                <input type="radio" id="background7" name="background" value="text_dragonland_background.jpg" />
+                <label for="background7">Dragonland</label>
+
+                <input type="radio" id="background8" name="background" value="text_lostworld_background.jpg" />
+                <label for="background8">Lost World</label>
+
+                <input type="radio" id="background9" name="background" value="text_reignofdead_background.jpg" />
+                <label for="background9">Reign of Dead</label>
+                
+                <input type="radio" id="background10" name="background" value="text_swamp_background.jpg" />
+                <label for="background10">Swamp</label>
+
+                <input type="radio" id="background11" name="background" value="text_void_background.jpg" />
+                <label for="background11">Void</label>
+
+                <input type="radio" id="background12" name="background" value="text_volcano_background.jpg" />
+                <label for="background12">Volcano</label>
+            </div>
+        </fieldset>
+        <button id="parse">Generate</button>
+        <div id="result" class="badge"></div>
+        <button id="download">Download</button>
+    </div>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script> -->
     <script src="exampleScore.js"></script>
     <script src="hero_cards.js"></script>
     <script src="hero_skills.js"></script>

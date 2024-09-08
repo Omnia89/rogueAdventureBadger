@@ -1,12 +1,22 @@
 const parseButton = document.getElementById('parse');
 const scoreInput = document.getElementById('score');
 const outputField = document.getElementById('result');
+const dowloadButton = document.getElementById('download');
+
+dowloadButton.addEventListener('click', () => {
+    html2canvas(outputField).then(canvas => {
+        const dataURL = canvas.toDataURL();
+        const a = document.createElement('a');
+        a.href = dataURL;
+        a.download = 'score.png';
+        a.click();
+    });
+});
 
 parseButton.addEventListener('click', () => {
     const rawScore = scoreInput.value;
-    const result = parseScore(rawScore);
-    console.log(result);
-    // outputField.innerHTML = JSON.stringify(result, null, 2);
+    const result = parseScore(rawScore.trim());
+    reset();
     formatResult(result);
 });
 
@@ -56,6 +66,35 @@ const parseRow = (row) => {
         value
     };
 };
+
+const reset = () => {
+    outputField.innerHTML = '';
+};
+
+
+const formatResult = (result) => {
+
+    placeHeroClass(result);
+    placeClassBonuses(result);    
+    placeSkills(result);
+    placeCards(result);
+    placeScore(result);
+    
+};
+
+const changeBackground = (name) => {
+    outputField.style["background-image"] = `url('assets/${name}')`;
+};
+
+document.addEventListener('DOMContentLoaded', () => {
+    const backgroundRadios = document.querySelectorAll('input[name="background"]');
+
+    backgroundRadios.forEach(radio => {
+        radio.addEventListener('change', (event) => {
+            changeBackground(event.target.value);
+        });
+    });
+});
 
 const subclassMap = {
     "assassin": ["scout", "shadow trick", "poison mark", "stunning grenades"],
@@ -137,16 +176,17 @@ const getGroupedArray = (array) => {
     }).sort((a, b) => a.index - b.index);
 };
 
-const formatResult = (result) => {
-
-    // get class 
+const placeHeroClass = (result) => {
     const heroClass = result["CLASS"];
     const heroClassImg = document.createElement('img');
     getImageSrc(heroClassImg, `choose_${heroClass}`);
     heroClassImg.classList.add('shield');
     outputField.insertAdjacentElement('beforeend', heroClassImg);
+}
 
+const placeClassBonuses = (result) => {
     // class bonuses container
+    const heroClass = result["CLASS"];
     const classBonuses = document.createElement('div');
     classBonuses.classList.add('bonus');
     outputField.insertAdjacentElement('beforeend', classBonuses);
@@ -174,7 +214,9 @@ const formatResult = (result) => {
         getImageSrc(classBonusImg, getHeroSubclassImageName(heroClass, classBonus));
         classBonuses.insertAdjacentElement('beforeend', classBonusImg);
     }
-    
+}
+
+const placeSkills = (result) => {
     // skills container
     const skillsContainer = document.createElement('div');
     skillsContainer.classList.add('skills');
@@ -201,7 +243,9 @@ const formatResult = (result) => {
         }
 
     });
+}
 
+const placeCards = (result) => {
     // cards container
     const cardsContainer = document.createElement('div');
     cardsContainer.classList.add('cards');
@@ -227,12 +271,23 @@ const formatResult = (result) => {
             imgContainer.insertAdjacentElement('beforeend', cardText);
         }
     });
-    
+}
+
+const placeScore = (result) => {
     // score container
     const scoreContainer = document.createElement('div');
     scoreContainer.classList.add('score');
     outputField.insertAdjacentElement('beforeend', scoreContainer);
 
+    placeUserData(result, scoreContainer);
+    placeModeAndScore(result, scoreContainer);
+    placeEnemies(result, scoreContainer);
+    placeGoods(result, scoreContainer);
+    placeRunStats(result, scoreContainer);
+    placeGameVersion(result, scoreContainer);
+}
+
+const placeUserData = (result, container) => {
     // user - date and time
     const user = result["USER"];
     const time = result["TIME"];
@@ -243,20 +298,23 @@ const formatResult = (result) => {
     userText.textContent = user;
     userText.classList.add('user');
     dateTimeUserText.insertAdjacentElement('afterbegin', userText);
-    scoreContainer.insertAdjacentElement('beforeend', dateTimeUserText);
+    container.insertAdjacentElement('beforeend', dateTimeUserText);
+}
 
-    // mode and score
+const placeModeAndScore = (result, container) => {
     const mode = result["GAME MODE"];
     const difficulty = result["DIFFICULTY"];
     const score = result["TOTAL SCORE"];
     const modeText = document.createElement('div');
     modeText.textContent = `${titleCase(mode)} - ${titleCase(difficulty)} - Score: ${score}`;
-    scoreContainer.insertAdjacentElement('beforeend', modeText);
+    container.insertAdjacentElement('beforeend', modeText);
+}
 
+const placeEnemies = (result, container) => {
     // enemies
     const enemiesContainer = document.createElement('div');
     enemiesContainer.classList.add('horizontal-stats');
-    scoreContainer.insertAdjacentElement('beforeend', enemiesContainer);
+    container.insertAdjacentElement('beforeend', enemiesContainer);
 
     // normal
     const normalEnemies = document.createElement('div');
@@ -266,7 +324,7 @@ const formatResult = (result) => {
     normalEnemies.textContent = result["NORMAL ENEMIES KILLED"];
     normalEnemies.insertAdjacentElement('afterbegin', normalEnemiesImg);
     enemiesContainer.insertAdjacentElement('beforeend', normalEnemies);
-    
+
     // elite
     const eliteEnemies = document.createElement('div');
     eliteEnemies.classList.add('single-stat');
@@ -284,11 +342,13 @@ const formatResult = (result) => {
     bossEnemies.textContent = result["BOSS KILLED"];
     bossEnemies.insertAdjacentElement('afterbegin', bossEnemiesImg);
     enemiesContainer.insertAdjacentElement('beforeend', bossEnemies);
+}
 
+const placeGoods = (result, container) => {
     // floors - chest opened - gold - gems
     const gainContainer = document.createElement('div');
     gainContainer.classList.add('horizontal-stats');
-    scoreContainer.insertAdjacentElement('beforeend', gainContainer);
+    container.insertAdjacentElement('beforeend', gainContainer);
 
     // floors
     const floors = document.createElement('div');
@@ -325,72 +385,46 @@ const formatResult = (result) => {
     gems.textContent = result["GEMS EARNED"];
     gems.insertAdjacentElement('afterbegin', gemsImg);
     gainContainer.insertAdjacentElement('beforeend', gems);
+};
 
-    // cards played - highest damage - damage taken
-    const doneContainer = document.createElement('div');
-    doneContainer.classList.add('horizontal-stats');
-    scoreContainer.insertAdjacentElement('beforeend', doneContainer);
+const placeRunStats = (result, container) => {
+     // cards played - highest damage - damage taken
+     const doneContainer = document.createElement('div');
+     doneContainer.classList.add('horizontal-stats');
+     container.insertAdjacentElement('beforeend', doneContainer);
+ 
+     // cards played
+     const cardsPlayed = document.createElement('div');
+     cardsPlayed.classList.add('single-stat');
+     const cardsPlayedImg = document.createElement('img');
+     getImageSrc(cardsPlayedImg, 'tab_card_icon_small');
+     cardsPlayed.textContent = result["CARDS PLAYED"];
+     cardsPlayed.insertAdjacentElement('afterbegin', cardsPlayedImg);
+     doneContainer.insertAdjacentElement('beforeend', cardsPlayed);
+     
+     // highest damage
+     const highestDamage = document.createElement('div');
+     highestDamage.classList.add('single-stat');
+     const highestDamageImg = document.createElement('img');
+     getImageSrc(highestDamageImg, 'old_skill_paladin');
+     highestDamage.textContent = result["HIGHEST DAMAGE"];
+     highestDamage.insertAdjacentElement('afterbegin', highestDamageImg);
+     doneContainer.insertAdjacentElement('beforeend', highestDamage);
+ 
+     // damage taken
+     const damageTaken = document.createElement('div');
+     damageTaken.classList.add('single-stat');
+     const damageTakenImg = document.createElement('img');
+     getImageSrc(damageTakenImg, 'slash');
+     damageTaken.textContent = result["DAMAGE TAKEN"];
+     damageTaken.insertAdjacentElement('afterbegin', damageTakenImg);
+     doneContainer.insertAdjacentElement('beforeend', damageTaken);
+};
 
-    // cards played
-    const cardsPlayed = document.createElement('div');
-    cardsPlayed.classList.add('single-stat');
-    const cardsPlayedImg = document.createElement('img');
-    getImageSrc(cardsPlayedImg, 'tab_card_icon_small');
-    cardsPlayed.textContent = result["CARDS PLAYED"];
-    cardsPlayed.insertAdjacentElement('afterbegin', cardsPlayedImg);
-    doneContainer.insertAdjacentElement('beforeend', cardsPlayed);
-    
-    // highest damage
-    const highestDamage = document.createElement('div');
-    highestDamage.classList.add('single-stat');
-    const highestDamageImg = document.createElement('img');
-    getImageSrc(highestDamageImg, 'old_skill_paladin');
-    highestDamage.textContent = result["HIGHEST DAMAGE"];
-    highestDamage.insertAdjacentElement('afterbegin', highestDamageImg);
-    doneContainer.insertAdjacentElement('beforeend', highestDamage);
-
-    // damage taken
-    const damageTaken = document.createElement('div');
-    damageTaken.classList.add('single-stat');
-    const damageTakenImg = document.createElement('img');
-    getImageSrc(damageTakenImg, 'slash');
-    damageTaken.textContent = result["DAMAGE TAKEN"];
-    damageTaken.insertAdjacentElement('afterbegin', damageTakenImg);
-    doneContainer.insertAdjacentElement('beforeend', damageTaken);
-
-    // game version, small upper right of scoreContainer
+const placeGameVersion = (result, container) => {
     const gameVersion = result["GAME VERSION"];
     const gameVersionText = document.createElement('span');
     gameVersionText.textContent = `v${gameVersion}`;
     gameVersionText.classList.add('game-version');
-    scoreContainer.insertAdjacentElement('beforeend', gameVersionText);
-
-    // NTH: recuperare gli sfondi presenti
-
-    //< GAME VERSION > in alto a dx in piccolo
-    //< VERIFICATION CODE > non credo di mostrarlo
-
-    // TODO: game mode (testo)
-    // TODO: difficulty (testo)
-    // TODO: score (da scrivere)
-
-    // Potenziali sfondi
-    // text_desert_background.jpg
-    // text_dragonland_background.jpg
-    // text_forest_background.jpg
-    // text_lostworld_background.jpg
-    // text_mountain_background.jpg
-    // text_reignofdead_background.jpg
-    // text_steam_background.jpg
-    // text_swamp_background.jpg
-    // text_void_background.jpg
-    // text_volcano_background.jpg
-    // text_water2_background.jpg
-    // text_water_background.jpg
-    // tournament_back_off.jpg 
-    // tournament_back_on.jpg 
-    // tournament_close.png 
-    // tournament_image.png 
-    // tournament_open.png
-    
-};
+    container.insertAdjacentElement('beforeend', gameVersionText);
+}

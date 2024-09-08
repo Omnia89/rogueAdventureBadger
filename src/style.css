@@ -3,16 +3,40 @@
     src: url("fonts/dpcomic.woff");
 }
 
+body {
+    background-color: #333;
+    color: #fff;
+    /* font-family: "RougueFont"; */
+}
+
+#container {
+    font-family: "RougueFont";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+#container > h1 {
+    font-size: 2em;
+    color: #fff;
+    text-shadow: 2px 2px 3px black;
+}
+
 #result {
     font-family: "RougueFont";
     font-size: 1.2em;
-    color: #333;
+    color: #fff;
+    text-shadow: 2px 2px 3px black;
     text-align: center;
     margin-top: 20px;
     padding: 10px;
     border: 1px solid #333;
     border-radius: 5px;
     background-color: #f4f4f4;
+    min-height: 150px;
+    background-image: url('assets/outer_container.png');
+    background-size: cover;
 }
 
 .badge {

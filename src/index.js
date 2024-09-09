@@ -5,11 +5,13 @@ const dowloadButton = document.getElementById('download');
 
 dowloadButton.addEventListener('click', () => {
     html2canvas(outputField).then(canvas => {
-        const dataURL = canvas.toDataURL();
-        const a = document.createElement('a');
-        a.href = dataURL;
-        a.download = 'score.png';
-        a.click();
+        const link = document.createElement('a');
+        link.download = `score.png`;
+        canvas.crossOrigin = "anonymous";
+        const dataURL = canvas.toDataURL('image/png');
+        link.href = dataURL;
+        document.body.appendChild(link);
+        link.click();
     });
 });
 

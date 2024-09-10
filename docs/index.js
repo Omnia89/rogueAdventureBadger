@@ -22,9 +22,6 @@ parseButton.addEventListener('click', () => {
     formatResult(result);
 });
 
-// TODO: remove
-scoreInput.value = exampleScore;
-
 const parseScore = (score) => {
     if (score.startsWith('```md\n')) {
         score = score.replace('```md\n', '');

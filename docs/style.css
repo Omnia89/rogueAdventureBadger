@@ -73,11 +73,17 @@ body {
 
 .cards {
     grid-area: cards;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .card {
     position: relative; 
-    display: inline-block; 
+    display: flex; 
+    flex-direction: column;
+    gap: 2px;
+    justify-items: center;
     margin: 2px;
 }
 
@@ -92,13 +98,9 @@ body {
 }
 
 .counter {
-    color: white; 
+    color: #ccc; 
     text-shadow: 2px 2px 3px black;
     font-size: 0.7em; 
-    position: absolute; 
-    top: 2px; 
-    right: 2px; 
-    z-index:10;
 }
 
 .user {

@@ -223,7 +223,7 @@ const placeSkills = (result) => {
 
     // skills
     const skills = result["SKILLS"];
-    const skillsArray = skills.split('-').map(skill => skill.trim());
+    const skillsArray = skills.split(' - ').map(skill => skill.trim());
     getGroupedArray(skillsArray).forEach(skill => {
         const skillContainer = document.createElement('div');
         skillContainer.classList.add('skill');
@@ -252,7 +252,7 @@ const placeCards = (result) => {
 
     // deck
     const deck = result["DECK"];
-    const deckArray = deck.split('-').map(card => card.trim());
+    const deckArray = deck.split(' - ').map(card => card.trim());
     getGroupedArray(deckArray).forEach(card => {
         const imgContainer = document.createElement('div');
         imgContainer.classList.add('card');

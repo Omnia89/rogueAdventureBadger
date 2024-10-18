@@ -109,7 +109,8 @@ const subclassMap = {
     "shaman": ["fire starter", "fiery impact", "sinful flame", "green fire"],
     "warden": ["sentient roots", "forest protector", "healing roots", "eternal entanglement"],
     "warrior": ["defensive stance", "trained troops", "shield charge", "dueling expert"],
-    "wizard": ["electric mana", "supercharged", "tri-sphere", "toxic energization"]
+    "wizard": ["electric mana", "supercharged", "tri-sphere", "toxic energization"],
+    "monk": ["tiger fist", "white lotus", "sacred scroll", "spirit of the ki masters"]
 };
 
 const getHeroSubclassImageName = (heroClass, subclass) => {
@@ -132,16 +133,23 @@ const checkImageExists = (url, callback) => {
 const getImageSrc = (element, imgName) => {
     const pngPath = `assets/${imgName}.png`;
     const jpgPath = `assets/${imgName}.jpg`;
+    const webpPath = `assets/${imgName}.webp`;
 
-    checkImageExists(pngPath, (exists) => {
+    checkImageExists(webpPath, (exists) => {
         if (exists) {
-            element.src = pngPath;
+            element.src = webpPath;
         } else {
-            checkImageExists(jpgPath, (exists) => {
+            checkImageExists(pngPath, (exists) => {
                 if (exists) {
-                    element.src = jpgPath;
+                    element.src = pngPath;
                 } else {
-                    console.error(`Image not found: ${imgName}`);
+                    checkImageExists(jpgPath, (exists) => {
+                        if (exists) {
+                            element.src = jpgPath;
+                        } else {
+                            console.error(`Image not found: ${imgName}`);
+                        }
+                    });
                 }
             });
         }

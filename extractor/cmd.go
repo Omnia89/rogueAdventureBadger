@@ -1,9 +1,12 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
 	extractSkills()
 	extractCards()
+	updateAssets()
 	fmt.Println("Done")
 }

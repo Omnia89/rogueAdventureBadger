@@ -134,7 +134,7 @@
     <!--new classes-->
     <skill><id>123</id><classe>warden</classe><name>Warden</name><text>skill_warden</text><image>skill_warden</image><cost>0</cost><level>1</level></skill>
     <skill><id>124</id><classe>cultist</classe><name>Cultist</name><text>skill_cultist</text><image>skill_cultist</image><cost>0</cost><level>1</level></skill>
-    <skill><id>125</id><classe>gladiator</classe><name>Gladiator</name><text>skill_gladiator</text><image>skill_gladiator</image><cost>0</cost><level>1</level></skill>
+    <skill><id>125</id><classe>monk</classe><name>monk</name><text>skill_monk</text><image>skill_monk</image><cost>0</cost><level>1</level></skill>
 
     <skill><id>126</id><classe>neutral</classe><name>Vial of Life</name><text>skill_103</text><image>skill_103</image><cost>5</cost><level>3</level><tags>Life|Debuff</tags></skill>
     <skill><id>127</id><classe>neutral</classe><name>Lure</name><text>skill_104</text><image>skill_104</image><cost>6</cost><level>1</level><tags>Shield/Armored|Daze/Taunt</tags></skill>
@@ -196,6 +196,11 @@
     <skill><id>171</id><classe>neutral</classe><name>Shooting Target</name><text>skill_148</text><image>skill_148</image><cost>6</cost><level>2</level><tags>Damage|Utility</tags></skill>
     <skill><id>172</id><classe>neutral</classe><name>Electrostatic Aura</name><text>skill_149</text><image>skill_149</image><cost>11</cost><level>12</level><tags>Electrify</tags></skill>
     <skill><id>173</id><classe>neutral</classe><name>Water Geyser</name><text>skill_150</text><image>skill_150</image><cost>7</cost><level>2</level><tags>Damage|Heal|Electrify</tags></skill>
+
+    <!--hidden skills-->
+    <skill><id>174</id><classe>hidden</classe><name>Mountain Pass Sigil</name><text>skill_secret_sigil</text><image>skill_mountain</image><cost>0</cost><level>1</level><tags>Mana</tags></skill>
+    <skill><id>175</id><classe>hidden</classe><name>x Sigil</name><text>skill_secret_sigil</text><image>skill_swamp</image><cost>0</cost><level>1</level><tags>Mana</tags></skill>
+    <skill><id>176</id><classe>hidden</classe><name>x Sigil</name><text>skill_secret_sigil</text><image>skill_desert</image><cost>0</cost><level>1</level><tags>Mana</tags></skill>
 
     <!--<skill><id>80</id><classe>neutral</classe><name>Christmas Offer</name><text>skill_christamas_offer</text><image>skill_christmas_offer</image><cost>12</cost><level>2</level></skill>-->
 </skills>

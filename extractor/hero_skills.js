@@ -124,7 +124,7 @@ const heroSkills = {
 	"the void sigil": "skill_void",
 	"warden": "skill_warden",
 	"cultist": "skill_cultist",
-	"gladiator": "skill_gladiator",
+	"monk": "skill_monk",
 	"vial of life": "skill_103",
 	"lure": "skill_104",
 	"destroyed shield": "skill_105",
@@ -173,4 +173,7 @@ const heroSkills = {
 	"shooting target": "skill_148",
 	"electrostatic aura": "skill_149",
 	"water geyser": "skill_150",
+	"mountain pass sigil": "skill_mountain",
+	"x sigil": "skill_swamp",
+	"x sigil": "skill_desert",
 };

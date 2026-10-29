@@ -4,12 +4,13 @@ import (
 	"encoding/xml"
 	"fmt"
 	"log"
+	"path/filepath"
 	"strings"
 )
 
 const (
-	heroCardFile = "../asset-maps/hero_card_list.xml"
-	heroCardJs   = "./hero_cards.js"
+	heroCardFile = "hero_card_list.xml"
+	heroCardJs   = "hero_cards.js"
 )
 
 type CardFile struct {
@@ -24,17 +25,20 @@ type Card struct {
 	Image string `xml:"image"`
 }
 
-func extractCards() {
+func loadCards() []Card {
 	cardFile := CardFile{}
-	err := extractXML(heroCardFile, &cardFile)
+	err := extractXML(filepath.Join(*mapsDir, heroCardFile), &cardFile)
 	if err != nil {
 		log.Fatal(err)
 	}
+	return cardFile.Cards
+}
 
+func extractCards() {
 	// write JS file
 	sb := strings.Builder{}
 	sb.WriteString("const heroCards = {\n")
-	for _, card := range cardFile.Cards {
+	for _, card := range loadCards() {
 		sb.WriteString("\t")
 		// replace "*"" with "i"
 		card.Name = strings.ReplaceAll(card.Name, "*", "i")
@@ -42,5 +46,7 @@ func extractCards() {
 	}
 	sb.WriteString("};\n")
 
-	writeJSFile(heroCardJs, sb.String())
+	if err := writeJSFile(filepath.Join(*docsDir, heroCardJs), sb.String()); err != nil {
+		log.Fatal(err)
+	}
 }

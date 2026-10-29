@@ -199,8 +199,34 @@
 
     <!--hidden skills-->
     <skill><id>174</id><classe>hidden</classe><name>Mountain Pass Sigil</name><text>skill_secret_sigil</text><image>skill_mountain</image><cost>0</cost><level>1</level><tags>Mana</tags></skill>
-    <skill><id>175</id><classe>hidden</classe><name>x Sigil</name><text>skill_secret_sigil</text><image>skill_swamp</image><cost>0</cost><level>1</level><tags>Mana</tags></skill>
-    <skill><id>176</id><classe>hidden</classe><name>x Sigil</name><text>skill_secret_sigil</text><image>skill_desert</image><cost>0</cost><level>1</level><tags>Mana</tags></skill>
+    <skill><id>175</id><classe>hidden</classe><name>Runic Dungeon Sigil</name><text>skill_secret_sigil</text><image>skill_runic</image><cost>0</cost><level>1</level><tags>Mana</tags></skill>
+    <skill><id>176</id><classe>hidden</classe><name>Land of Giants Sigil</name><text>skill_secret_sigil</text><image>skill_giant</image><cost>0</cost><level>1</level><tags>Mana</tags></skill>
+
+    <skill><id>177</id><classe>neutral</classe><name>Jade Egg</name><text>skill_151</text><image>skill_151</image><cost>15</cost><level>21</level><tags>Poison|Heal|Party/Evoke</tags></skill>
+    <skill><id>178</id><classe>neutral</classe><name>Ring of Invisibility</name><text>skill_152</text><image>skill_152</image><cost>14</cost><level>8</level><tags>Utility</tags></skill>
+    <skill><id>179</id><classe>neutral</classe><name>Staff of Charges</name><text>skill_153</text><image>skill_153</image><cost>7</cost><level>9</level><tags>Overcharged</tags></skill>
+    <skill><id>180</id><classe>neutral</classe><name>Thunder Axe</name><text>skill_154</text><image>skill_154</image><cost>7</cost><level>9</level><tags>Damage|Overcharged</tags></skill>
+    <skill><id>181</id><classe>neutral</classe><name>Bone Axe</name><text>skill_155</text><image>skill_155</image><cost>9</cost><level>18</level><tags>Damage|Strength</tags></skill>
+
+    <skill><id>182</id><classe>hidden</classe><name>Yum Yum</name><text>skill_secret_halloweeen_tournament</text><image>skill_hidden_pumpkin</image><cost>0</cost><level>1</level><tags>Utility</tags></skill>
+    <skill><id>183</id><classe>hidden</classe><name>Ghosts</name><text>skill_halloweeen_tournament1</text><image>skill_halloweeen_tournament1</image><cost>0</cost><level>1</level><tags>Utility</tags></skill>
+    <skill><id>184</id><classe>hidden</classe><name>Monsters</name><text>skill_halloweeen_tournament2</text><image>skill_halloweeen_tournament2</image><cost>0</cost><level>1</level><tags>Utility</tags></skill>
+    <skill><id>185</id><classe>hidden</classe><name>Zombies</name><text>skill_halloweeen_tournament3</text><image>skill_halloweeen_tournament3</image><cost>0</cost><level>1</level><tags>Utility</tags></skill>
+
+    <skill><id>186</id><classe>miner</classe><name>Miner</name><text>skill_miner</text><image>skill_miner</image><cost>0</cost><level>1</level></skill>
+    <skill><id>187</id><classe>samurai</classe><name>Samurai</name><text>skill_miner</text><image>skill_miner</image><cost>0</cost><level>1</level></skill>
+    <skill><id>188</id><classe>gladiator</classe><name>Gladiator</name><text>skill_miner</text><image>skill_miner</image><cost>0</cost><level>1</level></skill>
+
+    <skill><id>189</id><classe>neutral</classe><name>Phoenix Bow</name><text>skill_156</text><image>skill_156</image><cost>8</cost><level>10</level><tags>Heal|Damage|Burn</tags></skill>
+    <skill><id>190</id><classe>neutral</classe><name>Vampiric Dagger</name><text>skill_157</text><image>skill_157</image><cost>12</cost><level>16</level><tags>Heal</tags></skill>
+    <skill><id>191</id><classe>neutral</classe><name>First Strike</name><text>skill_158</text><image>skill_158</image><cost>16</cost><level>23</level><tags>Coins/Gems|Electrify</tags></skill>
+    <skill><id>192</id><classe>neutral</classe><name>Ball and Chain</name><text>skill_159</text><image>skill_159</image><cost>10</cost><level>13</level><tags>Mana|Debuff</tags></skill>
+    <skill><id>193</id><classe>neutral</classe><name>Mana Stone</name><text>skill_160</text><image>skill_160</image><cost>9</cost><level>19</level><tags>Mana|Shield</tags></skill>
+    <skill><id>194</id><classe>neutral</classe><name>White Shield</name><text>skill_161</text><image>skill_161</image><cost>14</cost><level>20</level><tags>Shield/Armored|Life|Heal</tags></skill>
+    <skill><id>195</id><classe>neutral</classe><name>Mana Gear</name><text>skill_162</text><image>skill_162</image><cost>6</cost><level>19</level><tags>Mana</tags></skill>
+    <skill><id>196</id><classe>neutral</classe><name>Flame Ward</name><text>skill_163</text><image>skill_163</image><cost>8</cost><level>16</level><tags>Burn|Shield</tags></skill>
+
+    <skill><id>197</id><classe>hidden</classe><name>Key of the Secret Portal</name><text>skill_secret_portal</text><image>skill_secret_portal</image><cost>0</cost><level>1</level><tags>Mana|Party/Evoke</tags></skill>
 
     <!--<skill><id>80</id><classe>neutral</classe><name>Christmas Offer</name><text>skill_christamas_offer</text><image>skill_christmas_offer</image><cost>12</cost><level>2</level></skill>-->
 </skills>

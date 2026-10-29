@@ -96,21 +96,22 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 const subclassMap = {
-    "assassin": ["scout", "shadow trick", "poison mark", "stunning grenades"],
-    "barbarian": ["berserker shout", "barbaric strength", "blood frenzy", "half orc leader"],
-    "cultist": ["boiling blood", "fire corruption", "blood shield", "angels and demons"],
-    "druid": ["enraged beast", "poisonous thorns", "permanence", "mighty morph"],
-    "engineer": ["workforce", "perfect alloy", "nuke activation", "optimized work"],
-    "necromancer": ["pain absorpion", "hellfire", "second wind", "piranha infestation"],
-    "paladin": ["healthy", "holy armor", "healing doom", "sword of damocles"],
-    "pirate": ["absolute greed", "prepared", "no mercy", "cursed ship"],
-    "ranger": ["sharp arrows", "poisonous arrows", "powered shot", "debilitating arrows"],
-    "runemaster": ["enchanted runes", "rune mastery", "upgraded runes", "double knowledge"],
-    "shaman": ["fire starter", "fiery impact", "sinful flame", "green fire"],
-    "warden": ["sentient roots", "forest protector", "healing roots", "eternal entanglement"],
-    "warrior": ["defensive stance", "trained troops", "shield charge", "dueling expert"],
-    "wizard": ["electric mana", "supercharged", "tri-sphere", "toxic energization"],
-    "monk": ["tiger fist", "white lotus", "sacred scroll", "spirit of the ki masters"]
+    "assassin": ["throwing knives", "shadow trick", "poison mark", "stunning grenades", "backstab"],
+    "barbarian": ["berserker shout", "barbaric strength", "blood frenzy", "half orc leader", "last stand"],
+    "cultist": ["boiling blood", "fire corruption", "blood shield", "angels and demons", "vital drain"],
+    "druid": ["enraged beast", "poisonous thorns", "permanence", "mighty morph", "magic of nature"],
+    "engineer": ["robotic skin", "sentry optimization", "nuke activation", "blueprint mastery", "turret deployment"],
+    "miner": ["gold forging", "fellowship of the deep", "dwarven stout", "blast mining", "born undergound"],
+    "monk": ["tiger fist", "white lotus", "sacred scroll", "spirit of the ki masters", "mystic form"],
+    "necromancer": ["pain absorpion", "hellfire", "second wind", "piranha infestation", "zombie mutation"],
+    "paladin": ["blessing of light", "holy fire", "crusader strike", "hammer of wrath", "dispel the evil"],
+    "pirate": ["absolute greed", "prepared", "no mercy", "cursed ship", "explosive projectiles"],
+    "ranger": ["sharp arrows", "poisonous arrows", "powered shot", "debilitating arrows", "companion's embrace"],
+    "runemaster": ["gliph of enchantment", "gliph of mastery", "gliph of evolution", "glyph of knowledge", "glyph of corruption"],
+    "shaman": ["fire starter", "fiery impact", "sinful flame", "green fire", "fire rain"],
+    "warden": ["sentient roots", "forest protector", "healing roots", "eternal entanglement", "blood blossom"],
+    "warrior": ["defensive stance", "parrying shield", "shield charge", "dueling expert", "charged attack"],
+    "wizard": ["lightning charge", "golem army", "unstable sphere", "toxic energization", "black magic"]
 };
 
 const getHeroSubclassImageName = (heroClass, subclass) => {
